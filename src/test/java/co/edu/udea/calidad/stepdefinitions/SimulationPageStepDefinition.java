@@ -1,5 +1,6 @@
 package co.edu.udea.calidad.stepdefinitions;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -18,7 +19,7 @@ import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.core.IsEqual.equalTo;
 
 @RunWith(Cucumber.class)
-public class FindHomePageStepDefinitions {
+public class SimulationPageStepDefinition {
 
     @Managed(driver = "chrome")
     public WebDriver driver;
@@ -30,18 +31,28 @@ public class FindHomePageStepDefinitions {
         usuario.can(BrowseTheWeb.with(driver));
     }
 
-    @Given("que me encuentro en la pagina principal de google")
+    @Given("dado que estoy en la pagina de Bancolombia")
     public void queMeEncuentroPaginaPrincipal(){
         usuario.can(BrowseTheWeb.with(driver));
     }
 
-    @When("escriba la palabra Bancolombia")
-    public void  escribaLaPalabraBancolombia(){
+    @When("navego por la pagina en busca de opciones")
+    public void  navegacionHomePageBancolombia(){
         usuario.attemptsTo(OpenThe.Browser(new UsuarioPage()));
     }
 
-    @Then("puedo ver la pagina oficial")
-    public void puedoVerElLinkOficial(){
+    @And("ingreso la informacion requerida")
+    public void  ingresoInfo(){
+        //todo case
+    }
+
+    @And("selecciono Simular")
+    public void  selecionaSimular(){
+        //todo case
+    }
+
+    @Then("se muestra una simulacion del credito de libre inversion con los resultados correspondientes")
+    public void seMuestra(){
         usuario.should(seeThat(ValidacionBancolombia.theHomePage(),equalTo(true)));
     }
 

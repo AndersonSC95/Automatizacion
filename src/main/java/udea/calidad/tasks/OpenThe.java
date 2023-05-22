@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Open;
-import udea.calidad.interactions.BancolombiaHomePage;
+import udea.calidad.interactions.BancolombiaSimulation;
 
 public class OpenThe implements Task {
 
@@ -18,7 +18,7 @@ public class OpenThe implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Open.browserOn(page));
-        actor.attemptsTo(BancolombiaHomePage.go());
+        actor.attemptsTo(BancolombiaSimulation.go());
     }
 
     public static OpenThe Browser(PageObject page){
