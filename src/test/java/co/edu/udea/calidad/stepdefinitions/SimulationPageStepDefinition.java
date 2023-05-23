@@ -12,9 +12,11 @@ import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import udea.calidad.questions.ValidacionBancolombia;
-import udea.calidad.tasks.OpenThe;
+import udea.calidad.tasks.EnterInfo;
+import udea.calidad.tasks.NavigationInThe;
 import udea.calidad.userinterfaces.UsuarioPage;
 
+import static java.awt.SystemColor.info;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.core.IsEqual.equalTo;
 
@@ -38,19 +40,13 @@ public class SimulationPageStepDefinition {
 
     @When("navego por la pagina en busca de opciones")
     public void  navegacionHomePageBancolombia(){
-        usuario.attemptsTo(OpenThe.Browser(new UsuarioPage()));
+        usuario.attemptsTo(NavigationInThe.Browser(new UsuarioPage()));
     }
 
-    @And("ingreso la informacion requerida")
+    @And("ingreso la informacion requerida para continuar")
     public void  ingresoInfo(){
-        //todo case
+        usuario.attemptsTo(EnterInfo.info(new UsuarioPage()));
     }
-
-    @And("selecciono Simular")
-    public void  selecionaSimular(){
-        //todo case
-    }
-
     @Then("se muestra una simulacion del credito de libre inversion con los resultados correspondientes")
     public void seMuestra(){
         usuario.should(seeThat(ValidacionBancolombia.theHomePage(),equalTo(true)));

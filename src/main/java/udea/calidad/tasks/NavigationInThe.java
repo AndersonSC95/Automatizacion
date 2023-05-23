@@ -5,23 +5,23 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Open;
-import udea.calidad.interactions.BancolombiaSimulation;
+import udea.calidad.interactions.BancolombiaNavigation;
 
-public class OpenThe implements Task {
+public class NavigationInThe implements Task {
 
     private final PageObject page;
 
-    public OpenThe(PageObject page){
+    public NavigationInThe(PageObject page){
         this.page = page;
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Open.browserOn(page));
-        actor.attemptsTo(BancolombiaSimulation.go());
+        actor.attemptsTo(BancolombiaNavigation.go());
     }
 
-    public static OpenThe Browser(PageObject page){
-        return Tasks.instrumented(OpenThe.class,page);
+    public static NavigationInThe Browser(PageObject page){
+        return Tasks.instrumented(NavigationInThe.class,page);
     }
 }
