@@ -6,6 +6,9 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
+
+
 import static udea.calidad.userinterfaces.UsuarioPage.*;
 
 public class BancolombiaNavigation implements Interaction{

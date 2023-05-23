@@ -16,7 +16,6 @@ import udea.calidad.tasks.EnterInfo;
 import udea.calidad.tasks.NavigationInThe;
 import udea.calidad.userinterfaces.UsuarioPage;
 
-import static java.awt.SystemColor.info;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.core.IsEqual.equalTo;
 
@@ -28,10 +27,11 @@ public class SimulationPageStepDefinition {
     private final Actor usuario = Actor.named("Anderson");
 
     @Before
-    public void preStage(){
+    public void preStage() {
         driver.manage().window().maximize();
         usuario.can(BrowseTheWeb.with(driver));
     }
+
 
     @Given("dado que estoy en la pagina de Bancolombia")
     public void queMeEncuentroPaginaPrincipal(){
