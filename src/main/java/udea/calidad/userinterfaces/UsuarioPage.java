@@ -9,7 +9,7 @@ public class UsuarioPage extends PageObject {
     public static final Target BUTTON_BUSCAR_SIMULACION = Target.the("LINK PARA SIMULAR").locatedBy("//*[@id='creditos']/div/div[1]/div[11]/div/div[2]/div/a[1]");
     public static final Target BUTTON_CONTINUAR = Target.the("BOTON CONTINUAR").locatedBy("//*[@id='boton-seleccion-tarjeta']");
 
-    public static final Target OPCION_SI = Target.the("OPCION SI").locatedBy("//*[@id='opcion-si']/label/span[1]/span[1]");
+    public static final Target OPCION_SI = Target.the("OPCION SI").locatedBy("//*[@id='opcion-si']/label");
 
     public static final Target TEXT_INPUT = Target.the("INPUT DINERO A SIMULAR").locatedBy("//*[@id='valor-simulacion']");
 
