@@ -6,20 +6,21 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
-import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 import static udea.calidad.userinterfaces.UsuarioPage.*;
 import static udea.calidad.userinterfaces.UsuarioPage.BUTTON_SIMULAR;
-
+//prueba final
 public class SimulationBancolombia implements Interaction {
     private static final int MIN_VALUE = 1000000;
     private static final int MAX_VALUE = 500000000;
     private static final int MIN_MONTHS = 48;
     private static final int MAX_MONTHS = 84;
+
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(OPCION_SI));
-        
+
         int valorAleatorio = generarValorAleatorio(MIN_VALUE, MAX_VALUE);
         int plazoAleatorio = generarValorAleatorio(MIN_MONTHS, MAX_MONTHS);
 
@@ -32,12 +33,14 @@ public class SimulationBancolombia implements Interaction {
         actor.attemptsTo(Click.on(BUTTON_SIMULAR));
     }
 
+    // La advertencia de seguridad puede ser ignorada en este caso
     private int generarValorAleatorio(int min, int max) {
-        Random random = new Random();
-        return random.nextInt((max - min) + 1) + min;
+        return ThreadLocalRandom.current().nextInt(min, max + 1);
     }
-
-    public static SimulationBancolombia infoGo(){
+    //pequeños cambios se necesitan revisar
+    public static SimulationBancolombia infoGo() {
         return Tasks.instrumented(SimulationBancolombia.class);
     }
 }
+
+
