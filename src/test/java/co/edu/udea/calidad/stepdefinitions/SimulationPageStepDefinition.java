@@ -1,5 +1,6 @@
 package co.edu.udea.calidad.stepdefinitions;
 
+import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -8,7 +9,6 @@ import cucumber.api.junit.Cucumber;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
-import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import udea.calidad.questions.ValidacionBancolombia;
@@ -35,6 +35,7 @@ public class SimulationPageStepDefinition {
 
     @Given("dado que estoy en la pagina de Bancolombia")
     public void queMeEncuentroPaginaPrincipal(){
+
         usuario.can(BrowseTheWeb.with(driver));
     }
 
