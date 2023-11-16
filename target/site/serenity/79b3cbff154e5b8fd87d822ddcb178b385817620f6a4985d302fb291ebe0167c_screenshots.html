@@ -129,7 +129,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 24-05-2023 11:49</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-11-2023 13:03</span>
     <br style="clear:left"/>
 </div>
 
@@ -165,9 +165,9 @@ en la pagina de Bancolombia.
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
                             <span class="test-case-title">
-                                <span class="success-color">Simular un credito de libre inversion en la pagina de Bancolombia
+                                <span class="failing-color">Simular un credito de libre inversion en la pagina de Bancolombia
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -184,39 +184,59 @@ en la pagina de Bancolombia.
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>udea.calidad.interactions.BancolombiaNavigation.performAs(BancolombiaNavigation.java:18)<br />udea.calidad.tasks.NavigationInThe.performAs(NavigationInThe.java:21)<br />co.edu.udea.calidad.stepdefinitions.SimulationPageStepDefinition.navegacionHomePageBancolombia(SimulationPageStepDefinition.java:44)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //*[@id='closeModalBtn']/span to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>udea.calidad.interactions.BancolombiaNavigation.performAs(BancolombiaNavigation.java :18)<br />udea.calidad.tasks.NavigationInThe.performAs(NavigationInThe.java :21)<br />co.edu.udea.calidad.stepdefinitions.SimulationPageStepDefinition.navegacionHomePageBancolombia(SimulationPageStepDefinition.java :44)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java :69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java :74)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource1355204509427679811.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="aef01e10bef36255fbfd96d5c2927a30c404516c1df6e36dee0685165fce61ad.png" title="Given dado que estoy en la pagina de Bancolombia" width="1920"/>
-                <img src="ecf73cf852466a75a566d11d4a5a669c6685fdb858fdcd5c22fbb375cbe4c058.png" title="When navego por la pagina en busca de opciones" width="1920"/>
-                <img src="06ef5db6b3c7c5439f397f5f243cd6b815ce6d08e248b047b45136a149bc7133.png" title="Anderson opens the Usuario page" width="1920"/>
-                <img src="669e0b3f4cd9b065ee31bb4ee91f80d4df3a31771e5576df459a70713731f2da.png" title="Anderson clicks on ANUNCIO" width="1920"/>
-                <img src="84865c862876fdca15564e5c95d8c8560a1f3df008b372304925432ff567d6e6.png" title="Anderson clicks on ANUNCIO" width="1920"/>
-                <img src="61fc7ac80218f36335ce9087b8cfaf7a9021ae217286955010155769855e7c26.png" title="Anderson clicks on BOTON CREDITOS" width="1920"/>
-                <img src="220971f226601262c1fb5145184b57b8a96f61cd9b91b33e2602f6a3836520ba.png" title="Anderson clicks on BOTON CREDITOS" width="1920"/>
-                <img src="0788454d9345ed02a5cb67748409243662126d3f53580e801d29d6787cc28adf.png" title="Anderson clicks on LINK PARA SIMULAR" width="1920"/>
-                <img src="ccebb8c81538e7febd897e4a459a7b1c4ca4de340216a8539d302b30b557424b.png" title="Anderson clicks on LINK PARA SIMULAR" width="1920"/>
-                <img src="ccebb8c81538e7febd897e4a459a7b1c4ca4de340216a8539d302b30b557424b.png" title="Anderson clicks on BOTON CONTINUAR" width="1920"/>
-                <img src="ecf73cf852466a75a566d11d4a5a669c6685fdb858fdcd5c22fbb375cbe4c058.png" title="Anderson clicks on BOTON CONTINUAR" width="1920"/>
-                <img src="a89b64ef4a18b214baf95f181b9b14e77eb73ed9f6afb2e783c45751489a440e.png" title="And ingreso la informacion requerida para continuar" width="1920"/>
-                <img src="02246888bc1e4e15d983b3e3c4c68b7b78a60145f5cb7c7cd0d4c9bcec8201fc.png" title="Anderson clicks on OPCION SI" width="1920"/>
-                <img src="7c57f34ff6763a1ead3c43a05dbfd984c86e7c5b9cee8f5b1f0b685e70d1784f.png" title="Anderson enters '265300584' into INPUT DINERO A SIMULAR" width="1920"/>
-                <img src="b1d8e4da12ef41fd97ad4077f2d78a5dffca91dee93ac33fb15a932c88256f0a.png" title="Anderson enters '265300584' into INPUT DINERO A SIMULAR" width="1920"/>
-                <img src="bf4da38f3d76506de137b74ed4b4d19147cd70358faf1bb2c9dbf35f87194172.png" title="Anderson enters '74' into INPUT MESES SIMULACION" width="1920"/>
-                <img src="364c8c60b7934f8e3e6b8b059cf34455ac2569d66935a9b5f2aa658061ae61f9.png" title="Anderson enters '74' into INPUT MESES SIMULACION" width="1920"/>
-                <img src="8ac63bd393db0ed6959b4eaa504cbb60639222dc231cd5dd9434e2cd9eda6a18.png" title="Anderson clicks on INPUT FECHA" width="1920"/>
-                <img src="936f76e57e85d6ddb7af0c1512984aaa7a9b56843e3da39e5a3621166a7ea820.png" title="Anderson clicks on INPUT FECHA" width="1920"/>
-                <img src="2d59b59712fb386284ca9c92e1af194b1e2348eff1b7e67940822e5693302745.png" title="Anderson clicks on INPUT ANNO" width="1920"/>
-                <img src="3c70f453c40e9bc4c34aec22bc552a973058d94f97bf3bbb9b991c3a84b49d03.png" title="Anderson clicks on INPUT ANNO" width="1920"/>
-                <img src="3c70f453c40e9bc4c34aec22bc552a973058d94f97bf3bbb9b991c3a84b49d03.png" title="Anderson clicks on INPUT MES" width="1920"/>
-                <img src="5fc7e9f4a26d2c91f0e5ed015967037d9b68615504a9f854208549d7586e22b0.png" title="Anderson clicks on INPUT MES" width="1920"/>
-                <img src="5fc7e9f4a26d2c91f0e5ed015967037d9b68615504a9f854208549d7586e22b0.png" title="Anderson clicks on INPUT DIA" width="1920"/>
-                <img src="e4673ecafda4b6876f8d31f4782d187975cb0af02563e65cfce0a20d9004c2e8.png" title="Anderson clicks on INPUT DIA" width="1920"/>
-                <img src="03ae69f4ec200e61d4993eba7d857d44dbfe038c162313c28e3e6bedfeb1ed06.png" title="Anderson clicks on BOTON SIMULAR" width="1920"/>
-                <img src="a89b64ef4a18b214baf95f181b9b14e77eb73ed9f6afb2e783c45751489a440e.png" title="Anderson clicks on BOTON SIMULAR" width="1920"/>
-                <img src="574706e86d540f805ca2248b81a69e16de1f5df62e618328aca996e99f46825a.png" title="Then se muestra una simulacion del credito de libre inversion con los resultados correspondientes" width="1920"/>
-                <img src="a552bf8acb11ee2f8643b55f1cd44d4e82d50e7719d7f7ca5f3e6d9c8bdf55e7.png" title="Then se muestra una simulacion del credito de libre inversion con los resultados correspondientes" width="1920"/>
-                <img src="319ca29e3e7cb193393b2d537dc7ea7967716936c5dc45be0557a0a02f73901d.png" title="Then validacion bancolombia should be (true)" width="1920"/>
-                <img src="a552bf8acb11ee2f8643b55f1cd44d4e82d50e7719d7f7ca5f3e6d9c8bdf55e7.png" title="Then validacion bancolombia should be (true): <span class='success-color'>SUCCESS</span>" width="1920"/>
+                <img src="53fc4626afb73a488c4ecc4bd78ab8bccc6a7fded04d89ed45921313168a1547.png" title="Given dado que estoy en la pagina de Bancolombia" width="1920"/>
+                <img src="53fc4626afb73a488c4ecc4bd78ab8bccc6a7fded04d89ed45921313168a1547.png" title="When navego por la pagina en busca de opciones" width="1920"/>
+                <img src="d8f32222541f35a8cce394a4f68db0d5d569705b88dd571b744d001f0d93620a.png" title="Anderson opens the Usuario page" width="1920"/>
+                <img src="502176b37f329c16f56933c3efe9370ac3ab5d2255f5a825d6d071701c5915a5.png" title="Anderson clicks on ANUNCIO" width="1920"/>
+                <img src="29c226a47f608f0cbc9fd7f7bd29a72cc1f8967b2d4b349db268d1170be3b796.png" title="Anderson clicks on ANUNCIO: <span class='failing-color'>FAILURE</span>" width="1920"/>
             </div>
         </div>
 
