@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="1545b1d4e40eb73f909a44e56c6c48bbfd4d02812671d1bf19c185871cff21dd.html">Crear Simulacion De Seleccion De Productos Y A&ntilde;adirlos Al Carrito De Compras</a></span>
+                > <span class="truncate-60"><a
+                    href="c5b040642febd37ef2649a4946839ffdee7b03cbc0e5205bbd65602cca2ba748.html">Simular seleccion de productos al carrito de compras </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-11-2023 10:46</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Crear Simulacion De Seleccion De Productos Y Añadirlos Al Carrito De Compras </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Como usuario, quiero poder simular la seleccion de productos y anadirlos al carrito de compras<br />
+en la pagina de Amazon.
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Simular seleccion de productos al carrito de compras
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="53fc4626afb73a488c4ecc4bd78ab8bccc6a7fded04d89ed45921313168a1547.png" title="Given dado que estoy en la pagina de Amazon" width="1920"/>
+                <img src="a0de3feb0aa830c301edd34ab6ff052ed8fe3a3fa7dca1ced05c831a86e2d110.png" title="When escribo &quot;LG Tv&quot; en la barra de busqueda" width="1920"/>
+                <img src="4399919e96878764982ae1ce475fba0a5e65a6a9292f5cffb212f55b55173311.png" title="Joan opens the Usuario page" width="1920"/>
+                <img src="3d9c27930be45cbbbfff70d5be8de6037408ff05e3c69da468a9791f02d3f031.png" title="Joan enters 'LG Tv' into BARRA DE NAVEGACION" width="1920"/>
+                <img src="7a3a192aa514fc4120de6966ddeb8daddfddb225aab08ad52282a68c65009afd.png" title="Joan enters 'LG Tv' into BARRA DE NAVEGACION" width="1920"/>
+                <img src="1838fea014a718d3d850c467f926d2e2e744c3642ab1560dae99276739f46d3f.png" title="Joan clicks on LUPA" width="1920"/>
+                <img src="bd5be1078b84ba3a36f9d04b25dd71ca97b5756cf7e62aac81d76b183cf26108.png" title="Joan clicks on LUPA" width="1920"/>
+                <img src="43a00fec097d84c769f36f7deae9c5299a675869dab806671ea676f99f4c400a.png" title="Joan clicks on FILTRO" width="1920"/>
+                <img src="8ea910bfd9490a8003afd63b46e132dcbb0b80fef2129e62badf86f3904d82bd.png" title="Joan clicks on FILTRO" width="1920"/>
+                <img src="8ea910bfd9490a8003afd63b46e132dcbb0b80fef2129e62badf86f3904d82bd.png" title="Joan clicks on FILTRO OP4" width="1920"/>
+                <img src="62b6497021955987b9db31d613efed0653a96e206e65db9e837ad39a21c7572c.png" title="Joan clicks on FILTRO OP4" width="1920"/>
+                <img src="1c1bca9721fb67b3cd3958590be6a8348e2f8516171ce1917dbf6681b8498b28.png" title="And seleciono el primer tv" width="1920"/>
+                <img src="009dbf004c4e2da78a247b675dfb6296aa5b7bfc71e1443859dbd12037e6d8f6.png" title="And seleciono el primer tv" width="1920"/>
+                <img src="9c02daecd3f667e5c9fdd755565be7dca9f822a76d8d6bef45b07c1178c1ecea.png" title="Joan clicks on PRIMER TV SELECCIONADO" width="1920"/>
+                <img src="ed4983babc95801770dfc5d3cceabd04e24f9e2bdd3adde20ce96c42ac1cf37b.png" title="Joan clicks on PRIMER TV SELECCIONADO" width="1920"/>
+                <img src="abbba76a4318b76d11de5604b21fa6672814eb1f8979f20ec37a4e36fe23e736.png" title="Joan clicks on BOTON AGREPAR CARRITO" width="1920"/>
+                <img src="f55e259cad0766cc4b406bffb47cf77cb31148f6ef24fe65b8a9b3ff5afda343.png" title="Joan clicks on BOTON AGREPAR CARRITO" width="1920"/>
+                <img src="9dfab6fbba8158f59da5272ff2073a77d5cfb6c2fb2602f112bf928f25c5aaf9.png" title="And seleciono el segundo tv" width="1920"/>
+                <img src="31370aa0029e6ddbf8febf7be3f4406f914b4a150cfd15c33102306700874309.png" title="Joan opens the Usuario page" width="1920"/>
+                <img src="31370aa0029e6ddbf8febf7be3f4406f914b4a150cfd15c33102306700874309.png" title="Joan enters 'LG Tv' into BARRA DE NAVEGACION" width="1920"/>
+                <img src="3a6d9a050c8a63f8159840dab74a2fb79227960da53ac996162bd6b6966f87fa.png" title="Joan enters 'LG Tv' into BARRA DE NAVEGACION" width="1920"/>
+                <img src="00b028d9a1dededc7e3bd870caeba7777f44d9de278ff5e44469086875d1b122.png" title="Joan clicks on LUPA" width="1920"/>
+                <img src="aefcce1b5f268d8cb49a8af35b82ffc08e3d86000bed33ca7cd9f291e463e78a.png" title="Joan clicks on LUPA" width="1920"/>
+                <img src="c0b4c52509184c313a45580f53cd980d83083cee2c523b11bb6afe34e3f2e833.png" title="Joan clicks on FILTRO" width="1920"/>
+                <img src="d065e8c9f5d01b6bc1ff54fe108dc7320cbc1f648520be59963aba67f1c93eb8.png" title="Joan clicks on FILTRO" width="1920"/>
+                <img src="d065e8c9f5d01b6bc1ff54fe108dc7320cbc1f648520be59963aba67f1c93eb8.png" title="Joan clicks on FILTRO OP4" width="1920"/>
+                <img src="557469507504f81cdb4f84a84a6ba79700f1f24e5f2212a7e113fe624d17d2c4.png" title="Joan clicks on FILTRO OP4" width="1920"/>
+                <img src="54c2db6bda666d9fa0491d03e8be7b5922fecd1d971ff3f9c85fc023fa72575d.png" title="Joan clicks on SEGUNDO TV SELECCIONADO" width="1920"/>
+                <img src="1de117a2f75bded69ceeaa4d342dac978fd5ab7b93e60973fbe01cdce622e7f1.png" title="Joan clicks on SEGUNDO TV SELECCIONADO" width="1920"/>
+                <img src="722b1bc1689d0e3e3f75356d100d2ad3f0c11091695146abc98ca28d32afc754.png" title="Joan clicks on BOTON AGREPAR CARRITO" width="1920"/>
+                <img src="9f1d68a61b7ec7de33f3fb1e3ed0bdbca58345113b63eeceb6f0591245146cbb.png" title="Joan clicks on BOTON AGREPAR CARRITO" width="1920"/>
+                <img src="9dfab6fbba8158f59da5272ff2073a77d5cfb6c2fb2602f112bf928f25c5aaf9.png" title="Then se muestra correctamente la seleccion de productos en el carrito de compras" width="1920"/>
+                <img src="9dfab6fbba8158f59da5272ff2073a77d5cfb6c2fb2602f112bf928f25c5aaf9.png" title="Then validacion carrito should be (true): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.0</span>
+</div>
+</body>
+</html>

@@ -31,8 +31,8 @@ ext {
 
 sonarqube {
     properties {
-        property "sonar.projectKey", "danielloaizan01_automatizacion"
-        property "sonar.organization", "danielloaizan01"
+        property "sonar.projectKey"
+        property "sonar.organization"
         property "sonar.host.url", "https://sonarcloud.io"
     }
 }

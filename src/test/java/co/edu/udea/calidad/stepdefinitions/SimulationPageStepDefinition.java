@@ -11,9 +11,10 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
-import udea.calidad.questions.ValidacionBancolombia;
-import udea.calidad.tasks.EnterInfo;
-import udea.calidad.tasks.NavigationInThe;
+import udea.calidad.questions.ValidacionCarrito;
+import udea.calidad.tasks.BuscarFiltrar;
+import udea.calidad.tasks.TaskTv1;
+import udea.calidad.tasks.TaskTv2;
 import udea.calidad.userinterfaces.UsuarioPage;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
@@ -24,7 +25,7 @@ public class SimulationPageStepDefinition {
 
     @Managed(driver = "chrome")
     public WebDriver driver;
-    private final Actor usuario = Actor.named("Anderson");
+    private final Actor usuario = Actor.named("Joan");
 
     @Before
     public void preStage() {
@@ -32,25 +33,29 @@ public class SimulationPageStepDefinition {
         usuario.can(BrowseTheWeb.with(driver));
     }
 
-
-    @Given("dado que estoy en la pagina de Bancolombia")
-    public void queMeEncuentroPaginaPrincipal(){
-
+    @Given("dado que estoy en la pagina de Amazon")
+    public void meEncuentroPaginaPrincipal(){
         usuario.can(BrowseTheWeb.with(driver));
     }
 
-    @When("navego por la pagina en busca de opciones")
+    @When("escribo \"LG Tv\" en la barra de busqueda")
     public void  navegacionHomePageBancolombia(){
-        usuario.attemptsTo(NavigationInThe.browser(new UsuarioPage()));
+        usuario.attemptsTo(BuscarFiltrar.busqueda(new UsuarioPage()));
     }
 
-    @And("ingreso la informacion requerida para continuar")
-    public void  ingresoInfo(){
-        usuario.attemptsTo(EnterInfo.info(new UsuarioPage()));
+    @And("seleciono el primer tv")
+    public void  seleccionTv1(){
+        usuario.attemptsTo(TaskTv1.info1(new UsuarioPage()));
     }
-    @Then("se muestra una simulacion del credito de libre inversion con los resultados correspondientes")
+
+    @And("seleciono el segundo tv")
+    public void  seleccionTv2(){
+        usuario.attemptsTo(BuscarFiltrar.busqueda(new UsuarioPage()));
+        usuario.attemptsTo(TaskTv2.info2(new UsuarioPage()));
+    }
+    @Then("se muestra correctamente la seleccion de productos en el carrito de compras")
     public void seMuestra(){
-        usuario.should(seeThat(ValidacionBancolombia.theHomePage(),equalTo(true)));
+        usuario.should(seeThat(ValidacionCarrito.theHomePage(),equalTo(true)));
     }
 
 }
